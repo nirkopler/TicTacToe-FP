@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Connection to style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- New Game Button-->
+        <button id="newGameBtn" onclick="newGameBtn()">New Game</button>
+        <button id="undoGameBtn" onclick="undoGameBtn()">Undo</button>
+        <button id="minStepGameBtn" onclick="minStepGameBtn()">Quickest Game</button>
+        <br>
+        <button id="saveGameBtn" onclick="saveGame()">Save</button>
+        <button id="loadGameBtn" onclick="loadGame()">Load</button>
+        <button id="ChangeSizeGameBtn" onclick="ChangeSizeGameBtn()">Change</button>
+        <div id="tablePlace">
+            <!-- New Table Board -->
+        </div>
+        <div id="winStatusDiv">
+            <span id="xWinStatus">0</span>
+            <span id="oWinStatus">0</span>
+            <span id="winStatus"></span>
+        </div>
+    </div>
+
+
+    <!--Connection to app.js-->
+    <script src="app.js"></script>
+</body>
+</html>
